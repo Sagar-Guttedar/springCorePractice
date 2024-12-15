@@ -21,6 +21,44 @@
         <property name="esalary" value="25000.1234f"/>
     </bean>
 
+    <bean id="f" class="com.joc.Faculty">
+        <property name="fid" value="100"/>
+        <property name="fname" value="Sagar"/>
+        <property name="salary" value="45000.45f"/>
+        <property name="add" ref="ad"/>
+    </bean>
+
+    <bean id="ad" class="com.joc.Address">
+        <property name="hno" value="61"/>
+        <property name="city" value="Bangaluru"/>
+        <property name="state" value="Ka"/>
+    </bean>
+
+    <bean id="qu" class="com.joc.Question">
+        <property name="qid" value="1"/>
+        <property name="qname" value="What is ?"/>
+        <property name="answer">
+            <list>
+                <value>Java is OOPS</value>
+                <value>Plateform Independent</value>
+                <value>Java is Robust</value>
+                <value>Java is Simple</value>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="map" class="com.joc.MapEx">
+        <property name="id" value="112"/>
+        <property name="mp">
+            <map>
+                <entry key="What is Java ?" value="I dont Know"/>
+                <entry key="What is SQL ?" value="Structured Query Language"/>
+                <entry key="What is HTML ?" value="Hyper Text Markup Language"/>
+                <entry key="What is Spring ?" value="Spring is a Frame"/>
+            </map>
+        </property>
+    </bean>
+
 
 
 </beans>
