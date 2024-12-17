@@ -59,6 +59,30 @@
         </property>
     </bean>
 
+    <bean id="st" class="com.joct.Student">
+        <constructor-arg value="111" type="int"/>
+        <constructor-arg value="DEF" type="String"/>
+        <constructor-arg value="75000"/>
+        <constructor-arg ref="aa"/>
+    </bean>
+    <bean id="aa" class="com.joct.Address">
+        <constructor-arg value="614"/>
+        <constructor-arg value="Bangalore"/>
+        <constructor-arg value="KA"/>
+    </bean>
+
+    <bean id="q" class="com.joct.Question">
+        <constructor-arg value="112"/>
+        <constructor-arg value="What is Spring"/>
+        <constructor-arg>
+            <list>
+                <value>Spring is Opensource</value>
+                <value>Spring is Non Invasive</value>
+                <value>Spring is Modular Framework</value>
+
+            </list>
+        </constructor-arg>
+    </bean>
 
 
 </beans>
